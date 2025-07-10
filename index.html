@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+ 
+<body>
+    <header><h1>The Tic-Tac-Toe</h1></header>
+ 
+    <main class="container">
+        <div class="game-container">
+            <!-- <label>X:</label> <input class="X" value="" type="text">
+            <label>Y:</label> <input class="Y" value="" type="text">
+            <button class="btn" id="player1Submit">1 Submit</button>
+            <button class="btn" id="player2Submit">2 Submit</button> -->
+
+            <div class="playerBox">
+                <div>
+                    <label>Player 1 Name:</label> 
+                    <input class="player1" value="" type="text">
+                    <label class="label1">Score: 0</label> 
+                </div>
+                <div>
+                    <label>Player 2 Name:</label>
+                    <input class="player2" value="" type="text">
+                    <label class="label2">Score: 0</label> 
+                    
+                </div>
+            </div>
+
+            <div class="gameBoard">
+                <button type="button" class="block" data-x="0" data-y="0"></button>
+                <button type="button" class="block" data-x="0" data-y="1"></button>
+                <button type="button" class="block" data-x="0" data-y="2"></button>
+                <button type="button" class="block" data-x="1" data-y="0"></button>
+                <button type="button" class="block" data-x="1" data-y="1"></button>
+                <button type="button" class="block" data-x="1" data-y="2"></button>
+                <button type="button" class="block" data-x="2" data-y="0"></button>
+                <button type="button" class="block" data-x="2" data-y="1"></button>
+                <button type="button" class="block" data-x="2" data-y="2"></button>
+            </div>
+
+            <p id="result"></p>
+            <!-- . point to same folder as the coding file -->
+            <img hidden src="./X.png" alt="XO" style="object-fit: cover;width: 50px;height: 50px;">
+            <img hidden src="./O.png" alt="XO" style="object-fit: cover;width: 50px;height: 50px;">
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+ 
+</body>
+ 
+</html>
